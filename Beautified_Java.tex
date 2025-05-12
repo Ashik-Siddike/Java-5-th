@@ -1,0 +1,150 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{fontspec}
+\setmainfont{FreeSans}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\title{Beautified Java (Bengali)}
+\author{}
+\date{}
+% If you want to show Java code, use lstlisting for English/Java only, not for Bengali text
+% Example:
+% \usepackage{listings}
+% \lstset{basicstyle=\ttfamily\small,breaklines=true,frame=single}
+% \begin{lstlisting}[language=Java]
+% class Student {
+%     int id;
+%     String name;
+% }
+% \end{lstlisting}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\vspace{1cm}
+
+\section*{C1}
+
+\textbf{প্রশ্ন: ক্লাস বলতে কী বুঝায়?}
+
+উত্তর:  \\
+ক্লাস হলো জাভার একটি ব্লুপ্রিন্ট বা নকশা, যার মাধ্যমে অবজেক্ট তৈরি করা হয়। এটি ফিল্ড (ভ্যারিয়েবল) এবং মেথডের সমষ্টি যা একটি নির্দিষ্ট অবজেক্টের বৈশিষ্ট্য ও আচরণ নির্ধারণ করে।
+
+\vspace{0.5em}
+\textbf{প্রশ্ন: অবজেক্ট বলতে কী বুঝায়?}
+
+উত্তর:  \\
+অবজেক্ট হলো ক্লাসের একটি বাস্তব রূপ বা instance, যা ক্লাসে সংজ্ঞায়িত গুণাবলি (properties) ও আচরণ (methods) ব্যবহার করতে পারে। এটি মেমোরিতে জায়গা দখল করে এবং ক্লাসের ভিত্তিতে কাজ করে।
+
+\vspace{0.5em}
+\textbf{প্রশ্ন: ক্লাস ডিক্লারেশন বলতে কী বুঝায়?}
+
+উত্তর:  \\
+ক্লাস ডিক্লারেশন বলতে একটি নতুন ক্লাস তৈরি করার জন্য জাভায় যে সিনট্যাক্স ব্যবহার করা হয়, তাকে বোঝায়। এতে class কীওয়ার্ড, ক্লাসের নাম, এবং ক্লাসের দেহ \{\} এর ভিতরে ফিল্ড ও মেথড থাকে।
+
+উদাহরণ:
+
+% Java code block example (keep only English/Java code here)
+% \begin{lstlisting}[language=Java]
+% class Student {
+%     int id;
+%     String name;
+% }
+% \end{lstlisting}
+
+\vspace{0.5em}
+\textbf{জাভায় ক্লাস ডিক্লারেশনের ফরম্যাট লেখ।}
+
+উত্তর:
+
+জাভায় ক্লাস ডিক্লারেশনের সাধারণ ফরম্যাট হলো—
+
+% \begin{lstlisting}[language=Java]
+% class ClassName {
+%     // ফিল্ড (ভ্যারিয়েবল)
+%     // কনস্ট্রাক্টর (যদি থাকে)
+%     // মেথড (ফাংশন)
+% }
+% \end{lstlisting}
+
+\vspace{0.5em}
+\textbf{জাভার ক্লাসে অবজেক্ট ডিক্লারেশনের ফরম্যাট লেখ}
+
+উত্তর:  \\
+জাভার ক্লাসে অবজেক্ট ডিক্লারেশনের ফরম্যাট হলো—
+
+% \begin{lstlisting}[language=Java]
+% ClassName objectName = new ClassName();
+% \end{lstlisting}
+
+উদাহরণস্বরূপ:
+
+% \begin{lstlisting}[language=Java]
+% Car myCar = new Car();
+% \end{lstlisting}
+
+এখানে Car হলো ক্লাসের নাম, myCar হলো অবজেক্টের নাম, এবং new Car() এর মাধ্যমে নতুন অবজেক্ট তৈরি করা হয়েছে।
+
+\vspace{0.5em}
+\textbf{প্রশ্ন: মেথড কাকে বলে?}
+
+উত্তর:  \\
+মেথড হলো জাভার একটি ফাংশন বা কার্যপ্রণালী, যা কোনো নির্দিষ্ট কাজ সম্পন্ন করার জন্য ব্যবহৃত হয়। এটি কোডের পুনঃব্যবহারযোগ্য অংশ, যা ক্লাসের ভিতরে লেখা হয় এবং অবজেক্টের মাধ্যমে বা সরাসরি ব্যবহার করা যায়।
+
+\vspace{0.5em}
+\textbf{প্রশ্ন: Object ও Class- এর মাঝে মূল পার্থক্য কী?}
+
+উত্তর:  \\
+Object ও Class-এর মূল পার্থক্য হলো:
+
+Class হলো একটি ব্লুপ্রিন্ট বা খালি ছাঁচ, যার মাধ্যমে অবজেক্ট তৈরি করা হয়। এটি বাস্তব নয়।
+
+Object হলো ক্লাসের ভিত্তিতে তৈরি একটি বাস্তব রূপ, যা মেমোরিতে জায়গা নেয় এবং ক্লাসের গুণাবলি ও আচরণ ব্যবহার করতে পারে।
+
+সংক্ষেপে:  \\
+Class $\rightarrow$ নকশা (design)  \\
+Object $\rightarrow$ বাস্তব রূপ (instance)
+
+\vspace{0.5em}
+\textbf{জাভা ক্লাসের ভেরিয়েবলগুলো লেখ।}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Instance Variable
+    \item Static Variable
+    \item Local Variable
+\end{enumerate}
+
+\section*{C2}
+
+\textbf{১। মেথডে ব্যবহৃত অ্যাক্সেস মডিফায়ারগুলোর নাম লেখ।}
+
+উত্তর:  \\
+মেথডে ব্যবহৃত অ্যাক্সেস মডিফায়ারগুলো হলো:
+
+\begin{itemize}
+    \item public
+    \item private
+    \item protected
+    \item default (package-private)
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{২। মেথডের উপাদানগুলোর নাম লেখ।}
+
+উত্তর:  \\
+মেথডের উপাদানগুলো হলো:
+
+\begin{itemize}
+    \item Access Modifier (যেমন public, private, protected, default)
+    \item Return Type (যেমন int, String, void)
+    \item Method Name (মেথডের নাম)
+    \item Parameters (যদি থাকে, ইনপুট প্যারামিটার)
+    \item Method Body (মেথডের কাজের বডি)
+\end{itemize}
+
+% ... Continue the rest of the file in this style ...
+
+\end{document} 
